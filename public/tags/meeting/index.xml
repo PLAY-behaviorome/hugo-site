@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meeting on PLAY Project</title>
+    <link>/tags/meeting/</link>
+    <description>Recent content in meeting on PLAY Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 29 Jun 2018 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/meeting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PLAY Summit @ ICIS 2018 Philadelphia</title>
+      <link>/talk/play-summit-2018/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/talk/play-summit-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NICHD workshop 2016 Bethesda</title>
+      <link>/talk/nichd-workshop-2016/</link>
+      <pubDate>Fri, 16 Dec 2016 00:00:00 -0500</pubDate>
+      
+      <guid>/talk/nichd-workshop-2016/</guid>
+      <description>We are grateful to the Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD), New York University (NYU), the Office of Behavioral and Social Sciences Research (OBSSR), the Society for Research in Child Development (SRCD), and the LEGO Foundation (LEGO) for providing support.</description>
+    </item>
+    
+  </channel>
+</rss>

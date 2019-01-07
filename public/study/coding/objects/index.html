@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.51" />
+  <meta name="author" content="Play &amp; Learning Across a Year (PLAY)">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Coding objects babyobject &lt;obj&gt;
+General Orientation This code captures the times that the baby is manually engaged with an object.
+   https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true
+   https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true
+Coders score only when object events occur, not when they don&rsquo;t occur. This is an event code, where gray spaces between cells mean that the baby is not engaged with an object.
+Value List o = object
+. = when baby is off camera and coder cannot determine whether baby has an object in hand.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/study/coding/objects/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="PLAY Project">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="PLAY Project">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/study/coding/objects/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="PLAY Project">
+  <meta property="og:url" content="/study/coding/objects/">
+  <meta property="og:title" content=" | PLAY Project">
+  <meta property="og:description" content="Coding objects babyobject &lt;obj&gt;
+General Orientation This code captures the times that the baby is manually engaged with an object.
+   https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true
+   https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true
+Coders score only when object events occur, not when they don&rsquo;t occur. This is an event code, where gray spaces between cells mean that the baby is not engaged with an object.
+Value List o = object
+. = when baby is off camera and coder cannot determine whether baby has an object in hand."><meta property="og:image" content="/img/PLAY-logo.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-09-09T00:00:00-04:00">
+  
+  <meta property="article:modified_time" content="2018-12-30T00:00:00-05:00">
+  
+
+  
+
+  
+
+  <title> | PLAY Project</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/PLAY-logo.png" alt="PLAY Project"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Measures</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/study/coding/">
+            
+            <span>Coding</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/study/people/">
+            
+            <span>People</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/study/protocol/">
+            
+            <span>Protocol</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/coding_manual/">Coding manual</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/coding_setup/">Coding setup</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/transcription/">Transcription</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/communication/">Communication</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/gesture/">Gesture</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/locomotion/">Locomotion</a>
+
+  </div>
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/study/coding/objects/">Objects</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/emotion/">Emotion</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#coding-objects-objects-html">Coding <a href="objects.html" target="_blank">objects</a></a>
+<ul>
+<li><a href="#babyobject"><code>babyobject</code></a>
+<ul>
+<li><a href="#general-orientation">General Orientation</a></li>
+<li><a href="#value-list">Value List</a></li>
+<li><a href="#operational-definitions">Operational Definitions</a></li>
+<li><a href="#how-to-code">How to Code</a></li>
+</ul></li>
+<li><a href="#momobject"><code>momobject</code></a>
+<ul>
+<li><a href="#general-orientation-1">General Orientation</a></li>
+<li><a href="#value-list-1">Value List</a></li>
+<li><a href="#operational-definitions-1">Operational Definitions</a></li>
+<li><a href="#how-to-code-1">How to Code</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name"></h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<h1 id="coding-objects-objects-html">Coding <a href="objects.html" target="_blank">objects</a></h1>
+
+<h2 id="babyobject"><code>babyobject</code></h2>
+
+<p><code>&lt;obj&gt;</code></p>
+
+<h3 id="general-orientation">General Orientation</h3>
+
+<p>This code captures the times that the baby is manually engaged with an object.</p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true</a></p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true</a></p>
+
+<p>Coders score only when object events occur, not when they don&rsquo;t occur.
+This is an event code, where gray spaces between cells mean that the baby is not engaged with an object.</p>
+
+<h3 id="value-list">Value List</h3>
+
+<p><code>o</code> = object</p>
+
+<p><code>.</code> = when baby is off camera and coder cannot determine whether baby has an object in hand.</p>
+
+<h3 id="operational-definitions">Operational Definitions</h3>
+
+<p><code>&lt;obj&gt;</code></p>
+
+<p>Object = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob).</p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62763/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62763/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62763/download?inline=true</a></p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/63765/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/63765/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/63765/download?inline=true</a></p>
+
+<p>Objects may include large objects (i.e., a stroller, adult furniture, door, etc.) when baby moves them, thus, manually engaging with them.
+If the object never moves (e.g., the baby has a hand on the stroller but does not displace it), then this is not coded as &lsquo;o.&rsquo;</p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/63763/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/63763/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/63763/download?inline=true</a></p>
+
+<p>The displacement rule is so that we can differentiate object engagement episodes from instances where baby is exploring a surface or resting hands on a surface for support.</p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/63767/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/63767/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/63767/download?inline=true</a></p>
+
+<p>The infant does not have to be looking at the object for the event to count as an object engagement (e.g., baby is carrying object).</p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true</a></p>
+
+<p>Riding on toys with wheels does not count as object, but this will be coded in babyloc pass.</p>
+
+<p>Code &lsquo;o&rsquo; if the baby is engaged with an object by making contact with the item with hand(s) and/or moving the item in space (e.g., carrying, pushing on the floor, etc.)</p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true</a></p>
+
+<p>Onset is the frame when baby first causes the object to move while making contact with any part of the hand(s), not feet.
+Contact could be from any part of the hand (fingers, palm, side of hand).
+Movement could including lifting, holding, pressing, grasping, shaking, banging, or any other type of displacement event. DO NOT code onset, just when the hand touches the object if the object is not displaced (e.g., if they child touches a pillow but then 1 minute later actually grasps and moves it, code onset at the movement not when the hand touches the object).
+Offset is the frame when baby is no longer in manual contact with an object for at least 3 s. OR when the baby is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s.
+There is no minimum duration for baby to touch an object to be scored as &lsquo;o,&rsquo; but if infant is touching multiple objects, the offset of &lsquo;o&rsquo; object cell is when baby is no longer in manual contact with the last object contacted for 3+ s.
+If the baby is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout.</p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62755/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62755/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62755/download?inline=true</a></p>
+
+<h3 id="how-to-code">How to Code</h3>
+
+<p>Set “JUMP-BACK-BY” key to 3 s.</p>
+
+<p>Enable cell highlighting.</p>
+
+<p>Watch in real time for the baby&rsquo;s hand(s).
+As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the baby moves/manipulates the object.
+Then, hit #4-SHUTTLEBACK to get to the onset of the cell.
+The Onset is the first frame when the baby makes manual contact with the item.
+Set this onset by hitting ENTER to set a new cell with that onset time.
+Now, continue watching the object bout in real time and set the Offset when the baby breaks manual contact or stops moving object (e.g., stroller) for at least 3 s.
+Once you&rsquo;ve determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the baby is no longer in manual contact with the item and/or when the baby is no longer moving it.
+Then, hit #9-SETOFFSET.</p>
+
+<p>Continue watching in real time for the next object bout.
+If the baby is holding an object while crawling or walking around, you can watch faster by SHUTTLING at 2x speed to find the end of the object engagement.</p>
+
+<p>To check whether a 3-s pause has occurred between object engagements, go to the offset of the previous object cell and watch until you reach the next instance of &lsquo;o&rsquo;.
+Then, hit the &lsquo;JUMP-BACK-BY&rsquo; key and check to see if the previous cell lights up. If it does, then the two cells are &lt;3 s apart and should be combined into one bout of &lsquo;o&rsquo;.</p>
+
+<h2 id="momobject"><code>momobject</code></h2>
+
+<p><code>&lt;obj&gt;</code></p>
+
+<h3 id="general-orientation-1">General Orientation</h3>
+
+<p>This code captures the times that the mom is engaged with an object.
+Coders score only when object events occur, not when they don&rsquo;t occur.
+This is an event code, where gray space in between cells means that the mom is not engaged with an object.</p>
+
+<h3 id="value-list-1">Value List</h3>
+
+<p><code>o</code> = object.</p>
+
+<p><code>.</code> = when mother is off camera and coder cannot determine whether she has an object in hand.</p>
+
+<h3 id="operational-definitions-1">Operational Definitions</h3>
+
+<p><code>&lt;obj&gt;</code></p>
+
+<p>Object = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items). Object can include parts of a stationary object (e.g., doorknob on door, clasp on drawer) that can be moved or manipulated.</p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62767/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62767/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62767/download?inline=true</a></p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true</a></p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62791/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62791/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62791/download?inline=true</a></p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true</a></p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true</a></p>
+
+<p>Object can include large objects that mom may move (chairs).</p>
+
+<p>Code &lsquo;o&rsquo; if mom is engaged with an object by making contact with the item with her hand(s).
+Onset is the frame when mom first makes contact with hands. Offset is the frame when mom is no longer in manual contact with an object for at least 3 s.
+If the mom has multiple items in hand, the Onset of object is when a hand(s) touched the first object in the multiple-object-bout and the Offset is when the hand(s) release the last object.</p>
+
+<p>In cases of larger objects (i.e., a stroller, a box, a chair, a table, etc.), the object engagement begins when the object starts to move. If the large object never moves (e.g., the mom has a hand on the stroller but does not displace it), then this is not coded as &lsquo;o&rsquo;.</p>
+
+<p></br>
+<video width="320" height="240" controls>
+<source src="https://nyu.databrary.org/slot/14765/-/asset/63366/download?inline=true" type="video/mp4">
+</video>
+</br>
+<a href="https://nyu.databrary.org/slot/14765/-/asset/63366/download?inline=true" target="_blank">https://nyu.databrary.org/slot/14765/-/asset/63366/download?inline=true</a></p>
+
+<p>If the mom is not in the camera view, code this with a &lsquo;.&rsquo; as missing data.</p>
+
+<h3 id="how-to-code-1">How to Code</h3>
+
+<p>Set “JUMP-BACK-BY” key to 3 s.</p>
+
+<p>Enable cell highlighting.</p>
+
+<p>Watch in real-time for the mom&rsquo;s hand(s).
+As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the mom moves/manipulated the object (which would make this an instance of Object).
+Then, hit #4-SHUTTLEBACK to get to the onset of the cell.
+The Onset is the first frame when the mom makes manual contact with the item and moves it through space.
+Set this onset by hitting ENTER to set a new cell with that onset time.
+Now, continue watching the Object bout in real time and set the Offset when the mom breaks manual contact or stops moving the object for at least 3 s (i.e., Object bouts that are interrupted by gray space are more than 3 s apart.</p>
+
+<p>There is no necessary minimum duration for object engagement during the &lsquo;o&rsquo; bout to be coded as Object.
+In other words, the mom can engage with an item or as little or as much time as they would like, however, the mom must make manual contact and move it through space to count.</p>
+
+<p>Once you&rsquo;ve determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the mom if no longer in manual contact with the item and/or when the mom is no longer moving it.
+Then, hit #9-SETOFFSET.</p>
+
+<p>Continue watching in real time for the next object bout.
+If the mom is walking or crawling with an object, watch at 2x speed.</p>
+
+<p>Do not agonize.
+If the mom goes in and out of the camera view, but you know she is still holding the same object and has not put it down, code it in the same bout of &lsquo;o&rsquo;.
+Do not mark the “.” for every few seconds she is out of frame.</p>
+
+<p>Code as Object event if mom&rsquo;s back is to the camera, but you see her arms moving and she overtly appears to be manipulating something—even if you can&rsquo;t see exactly what it is.</p>
+
+<p>Many times, onsets and offsets are coded when mom goes in and out of frame.
+In these instances, hit the <em>0</em> key to set a continuous cell, whose onset is 1-ms after the previous cell.</p>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Dec 30, 2018
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+
+  </body>
+</html>
+
+

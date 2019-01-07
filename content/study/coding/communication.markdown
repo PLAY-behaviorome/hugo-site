@@ -1,0 +1,505 @@
++++
+title = ""
+date = 2018-09-09T00:00:00
+lastmod = 2018-12-30T00:00:00
+
+draft = false  # Is this a draft? true/false
+toc = true  # Show table of contents? true/false
+type = "docs"  # Do not modify.
+[menu.coding]
+  name = "Communication"
+  weight = 4
+  
+tags = ["communication", "language", "video"]
++++
+
+
+
+# Coding [communication](communication.html)
+
+## `babyvoc`
+
+`<content>`
+  
+### General Orientation
+
+Contains a transcript of all of the utterances/vocalizations of the baby.
+
+This column is automatically populated after the transcribe pass is completed using a Ruby script.
+All of the utterances tagged with 'b' in <source> in transcribe are transferred here.
+The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.
+
+## `babyutterancetype`
+
+`<language_s-w>` `<langlike-b-v>` `<crygrunt_c-g>` `<unintell-x>`
+  
+### General Orientation
+
+Utterance type = categorization of previously coded utterances as a specific type of speech form. 
+Read the utterance transcribed in babyvoc column and categorize each utterance based on codes below.
+
+Codes are mutually exclusive. 
+The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (language, language-like sounds, etc.) down through the more nuanced and time-consuming codes. 
+Once the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods ”.”. For instance, if the baby didn't speak in full speech, or speech-like sound, but did cry/scream, then code <.,.,c,.>.
+
+The transcript will expedite this process. Double check and listen again as you read the transcript. Comment any disagreements.
+
+### Value List
+
+`<language_s-w>`
+
+`s` = sentence
+
+`w` = word
+
+`<langlike_b-v>`
+
+`b` = babble
+
+`v` = vowel
+
+`<crygrunt_c-g>`
+
+`c` = cry
+
+`g` = grunt
+
+`<unintell-x>`
+
+`x` = unintelligible
+
+### Operational Definitions
+
+`<s>`
+
+Sentence = an utterance in which the speaker utters more than one word, producing a sentence or phrase (e.g., “Daddy's shoe” or “Go to the park”). 
+
+Transcription: “ooh gimme that”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63348/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63348/download?inline=true>
+
+Transcription: “i take this”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63350/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63350/download?inline=true>
+
+Transcription: “goodbye sad face?”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63354/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63354/download?inline=true>
+
+`<w>`
+
+Word = an utterance in which the speaker utters a single word, such as “dolly” or “ball.” 
+
+Transcription: “cars”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63352/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63352/download?inline=true>
+
+Transcription: “basketball”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63356/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63356/download?inline=true>
+
+Transcription: “truck”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63358/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63358/download?inline=true>
+
+`<b>`
+
+Babble = an utterance in which the speaker utters a series of repeated canonical syllables, such as ba-ba-ba, or ga-ga-ga. 
+
+Transcription: “b”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63334/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63334/download?inline=true>
+
+Transcription: “b”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63338/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63338/download?inline=true>
+
+Transcription: “b”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63340/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63340/download?inline=true>
+
+`<v>`
+
+Vowel = an utterance in which the speaker utters a vowel sound (e.g, /a/, /i:/). 
+ 
+Transcription: “v”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63342/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63342/download?inline=true>
+
+Transcription: “v”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63344/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63344/download?inline=true>
+
+Transcription: “v”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63346/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63346/download?inline=true>
+      
+`<c>`
+
+Cry = an utterance in which the speaker is experiencing a period of prolonged distress. 
+
+Transcription: “c”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63746/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63746/download?inline=true>
+
+Transcription: “c”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63749/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63749/download?inline=true>
+
+Transcription: “c”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63752/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63752/download?inline=true>
+
+`<g>`
+
+Grunt = an utterance in which the speaker produces a low, short, inarticulate, guttural sound often used to express effort or exertion. 
+Vegetative sounds, such as coughing and sneezing, should be captured using this code. 
+
+<!-- Should this be "g"? -->
+Transcription: “c”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63747/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63747/download?inline=true>
+
+<!-- Should this be "g"? -->
+Transcription: “c”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63753/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63753/download?inline=true>
+
+`<x>`
+
+Unintelligible = either what the baby said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it.
+            
+### How to Code
+
+Set the “JUMP-BACK-BY” to 2 s.
+            
+Hit “FIND” on the controller to go to the onset of each utterance, which was populated in babyvoc column. 
+JUMP-BACK-BY 2 s so the utterance can be viewed in context.
+            
+Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB to between each argument/prompt inserting period “.” until you reach the appropriate code. 
+Then insert periods to the end of the cell.
+            
+## `momspeech`
+            
+`<content>`
+              
+### General Orientation
+            
+Contains a transcript of all of the utterances of the mom.
+            
+This column is automatically populated after the transcribe pass is completed using a Ruby script. 
+All of the utterances tagged with 'm' in <source> in transcribe are transferred here. 
+The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.
+            
+## `momutterancetype`
+
+`<imperative_l-a-p>` `<interrog-i_declar-d>` `<filler-f>` `<unintell-x>`
+              
+### General Orientation
+            
+Utterance type = categorization of previously coded utterances as a specific type of speech form. 
+Read the utterance transcribed in `momspeech` column and categorize each utterance based on codes below.
+            
+Codes are mutually exclusive. 
+The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (imperatives, then interrogatives, declaratives, etc.) down through the more nuanced and time-consuming codes. 
+After the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods “.”. 
+For instance, if the mom didn't do an imperative, sing/read, but did give a declarative, then code <.,d,.,.>.
+            
+What is coded is not solely based on the transcript. Listen to the audio, watch the video, and read the transcript so you are sure of the intent behind the mom's speech.
+            
+### Value List
+            
+`<imperative_l-a-p>`
+
+`l` = imperative look
+            
+`a` = imperative act
+            
+`p` = imperative prohibit
+            
+
+`<interrog-i_declar-d>`
+              
+`i` = interrogative`
+            
+`d` = declarative
+            
+`<filler-f>`
+              
+`f` = filler/affirmation
+            
+`<unintell-x>`
+              
+`x` = unintelligible
+            
+### Operational Definitions
+
+`<l>` 
+
+Imperative Look = an utterance in which the speaker directs a baby's attention (e.g., “Look here”, “See?”, or calls baby's name to alert attention). 
+
+Transcript: “evelyn”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63370/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63370/download?inline=true>
+
+Transcript: “look”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63374/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63374/download?inline=true>
+
+`<a>`
+
+Imperative Act = an utterance in which the speaker directs a baby's action, such as asking baby to do something, or to play with an object. An example would be if a mother tells her baby “let's play with the ball”.
+
+Transcript: “turn the page”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63376/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63376/download?inline=true>
+
+Transcript: “come here please”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63378/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63378/download?inline=true>
+
+Transcript: “go get the basketball”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63392/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63392/download?inline=true>
+
+**NOTE**: The imperative look and imperative act can be collapsed if the breakdown takes too long to code/specify (although we don't think it will save time).
+
+`<p>`
+
+Imperative Prohibit = an utterance in which the speaker prohibits a baby's behavior, such as asking baby to stop what they're doing. 
+
+Transcript: “dont knock it over”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63380/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63380/download?inline=true>
+
+Transcript: “dont be so rough”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63394/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63394/download?inline=true>
+
+Transcript: “no no tv”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63755/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63755/download?inline=true>
+
+`<i>`
+
+Interrogative = an utterance in which the speaker asks for information about objects or ongoing activities (e.g., “What is this called?”, “What color is this?).
+                                                                    Questions that start with “Can you” or “Would you” (e.g., “Can you put that down”) should not be considered for interrogatives. Their function is to regulate the baby's behavior and should be coded as imperatives. Tag questions, in which the speaker adds a question at the end of a statement (“That's a blue truck, right?”) are not considered questions. These should be coded as declaratives. 
+                                                                    
+Transcript: “how does the pig say?”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63386/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63386/download?inline=true>
+
+Transcript: “what is this?”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63390/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63390/download?inline=true>
+
+`<d>`
+
+Declarative= an utterance in which the speaker provides information about objects, events or ongoing activities (e.g., “This is a fun toy”; “Red truck”; “You are stirring in the cup”.
+
+Transcript: “baby's clothes”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63368/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63368/download?inline=true>
+
+Transcript: “thats a lemonade”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63388/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63388/download?inline=true>
+
+`<f>`
+
+Affirmations/Fillers = an utterance in which the speaker is recognizing another speaker's behavior and agreeing with it, or using words as conversational fillers. 
+For instance, when the mother says “There you go” when the baby successfully completes a puzzle, or when she says “yeah”, or “uhuh”.
+
+Transcript: “wow”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63396/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63396/download?inline=true>
+
+Transcript: “there you go”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63757/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63757/download?inline=true>
+
+`<x>`
+                                                                    Unintelligible = either what the mom said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. 
+
+Transcript: “xxx”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63410/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63410/download?inline=true>
+
+Transcript: “xxx”
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/-/asset/63412/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/-/asset/63412/download?inline=true>
+
+### How to Code
+
+Set the JUMP-BACK-BY key for 2 s.
+Hit “FIND” on the controller to go to the onset of each utterance, which was populated in momspeech column.
+
+JUMP-BACK-BY 2 s so the utterance can be viewed in context.
+Play in real time to code each utterance, which is coded in mutually exclusive categories.
+
+TAB between each argument/prompt inserting period ”.“ until you reach the appropriate code. Then insert periods to the end of the cell.

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding on PLAY Project</title>
+    <link>/study/coding/</link>
+    <description>Recent content in Coding on PLAY Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="/study/coding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/study/coding/coding_setup/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/study/coding/coding_setup/</guid>
+      <description>Coding Set Up This section describes how to transcribe &amp;amp; code the 1-hour natural play session.
+Getting Started Download the development version of Datavyu. Download the PLAY_CodingTemplate.opf file from the PLAY Databrary Volume. Name this file with the PLAY naming convention (e.g., PLAY_NYU001, … PLAY_NYU010, … PLAY_NYU030). - This template contains all of the primary variables that will be coded by each site: communication, gesture, object interaction, locomotion, and emotion.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/study/coding/communication/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/study/coding/communication/</guid>
+      <description>Coding communication babyvoc &amp;lt;content&amp;gt;
+General Orientation Contains a transcript of all of the utterances/vocalizations of the baby.
+This column is automatically populated after the transcribe pass is completed using a Ruby script. All of the utterances tagged with &amp;lsquo;b&amp;rsquo; in  in transcribe are transferred here. The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/study/coding/emotion/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/study/coding/emotion/</guid>
+      <description>Coding emotion babyemotion &amp;lt;emotion_p-n&amp;gt;
+General Orientation This code captures the times that the baby is clearly displaying positive or negative emotion through facial expressions. Times when the baby is in neutral emotion are not marked. Bouts of emotion as scored as events, where the grey spaces between emotion events mean the baby is neutral or emotion is unclear. Coders also mark times as “missing” when the baby&amp;rsquo;s face could not possibly be coded for emotion (e.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/study/coding/gesture/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/study/coding/gesture/</guid>
+      <description>Coding gesture gesture &amp;lt;source_m-b&amp;gt;, &amp;lt;gesture_p-s-i-c&amp;gt;
+General Orientation Gestures are segmented, durative, event-based behaviors. Watch the video paying attention to the communicative gestures used by the parent and the child. When coding for gesture, focus on the mother’s or baby’s hands and head.
+Code mother and baby gesture simultaneously in one pass. Then based on the &amp;lt;source&amp;gt; of the gesture, a script breaks apart mom and baby into separate babygesture and momgesture columns.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/study/coding/locomotion/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/study/coding/locomotion/</guid>
+      <description>Coding locomotion babyloc &amp;lt;loc_l-f-h-c&amp;gt;
+General Orientation This code captures the times that the baby is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, cruising, supported walking, independent walking, etc.).
+   https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true
+   https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true
+Also included in this pass are the times when locomotion cannot occur because the baby is held,
+   https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true
+and the times baby is constrained in baby furniture (e.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/study/coding/objects/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/study/coding/objects/</guid>
+      <description>Coding objects babyobject &amp;lt;obj&amp;gt;
+General Orientation This code captures the times that the baby is manually engaged with an object.
+   https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true
+   https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true
+Coders score only when object events occur, not when they don&amp;rsquo;t occur. This is an event code, where gray spaces between cells mean that the baby is not engaged with an object.
+Value List o = object
+. = when baby is off camera and coder cannot determine whether baby has an object in hand.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/study/coding/transcription/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/study/coding/transcription/</guid>
+      <description>Transcribing transcribe &amp;lt;source_m-b&amp;gt;, &amp;lt;content&amp;gt;.
+General Orientation The transcribe column is used to tag the onset of each utterance/vocalization by the mom and baby in a single pass. Then based on the &amp;lt;source&amp;gt; of the utterance/vocalization, the momspeech and babyvoc columns are automatically populated by a script.
+Utterance = a unit of speech separated by silence/pause, which can be a natural “period” as in end of a complete thought or sentence or a long pause (i.</description>
+    </item>
+    
+    <item>
+      <title>Coding Manual</title>
+      <link>/study/coding/coding_manual/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/study/coding/coding_manual/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.51" />
+  <meta name="author" content="Play &amp; Learning Across a Year (PLAY)">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Coding emotion babyemotion &lt;emotion_p-n&gt;
+General Orientation This code captures the times that the baby is clearly displaying positive or negative emotion through facial expressions. Times when the baby is in neutral emotion are not marked. Bouts of emotion as scored as events, where the grey spaces between emotion events mean the baby is neutral or emotion is unclear. Coders also mark times as “missing” when the baby&rsquo;s face could not possibly be coded for emotion (e.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/study/coding/emotion/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="PLAY Project">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="PLAY Project">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/study/coding/emotion/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="PLAY Project">
+  <meta property="og:url" content="/study/coding/emotion/">
+  <meta property="og:title" content=" | PLAY Project">
+  <meta property="og:description" content="Coding emotion babyemotion &lt;emotion_p-n&gt;
+General Orientation This code captures the times that the baby is clearly displaying positive or negative emotion through facial expressions. Times when the baby is in neutral emotion are not marked. Bouts of emotion as scored as events, where the grey spaces between emotion events mean the baby is neutral or emotion is unclear. Coders also mark times as “missing” when the baby&rsquo;s face could not possibly be coded for emotion (e."><meta property="og:image" content="/img/PLAY-logo.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-09-09T00:00:00-04:00">
+  
+  <meta property="article:modified_time" content="2018-12-30T00:00:00-05:00">
+  
+
+  
+
+  
+
+  <title> | PLAY Project</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/PLAY-logo.png" alt="PLAY Project"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Measures</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/study/coding/">
+            
+            <span>Coding</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/study/people/">
+            
+            <span>People</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/study/protocol/">
+            
+            <span>Protocol</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/coding_manual/">Coding manual</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/coding_setup/">Coding setup</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/transcription/">Transcription</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/communication/">Communication</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/gesture/">Gesture</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/locomotion/">Locomotion</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/study/coding/objects/">Objects</a>
+
+  </div>
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/study/coding/emotion/">Emotion</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#coding-emotion-emotion-html">Coding <a href="emotion.html" target="_blank">emotion</a></a>
+<ul>
+<li><a href="#babyemotion"><code>babyemotion</code></a>
+<ul>
+<li><a href="#general-orientation">General Orientation</a></li>
+<li><a href="#value-list">Value List</a></li>
+<li><a href="#operational-definitions">Operational Definitions</a>
+<ul>
+<li><a href="#onset">Onset</a></li>
+<li><a href="#offset">Offset</a></li>
+</ul></li>
+<li><a href="#how-to-code">How to Code</a></li>
+</ul></li>
+<li><a href="#momemotion"><code>momemotion</code></a>
+<ul>
+<li><a href="#general-orientation-1">General Orientation</a></li>
+<li><a href="#value-list-1">Value List</a></li>
+<li><a href="#operational-definitions-1">Operational Definitions</a>
+<ul>
+<li><a href="#onset-1">Onset</a></li>
+<li><a href="#offset-1">Offset</a></li>
+</ul></li>
+<li><a href="#how-to-code-1">How to Code</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name"></h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<h1 id="coding-emotion-emotion-html">Coding <a href="emotion.html" target="_blank">emotion</a></h1>
+
+<h2 id="babyemotion"><code>babyemotion</code></h2>
+
+<p><code>&lt;emotion_p-n&gt;</code></p>
+
+<h3 id="general-orientation">General Orientation</h3>
+
+<p>This code captures the times that the baby is clearly displaying positive or negative emotion through facial expressions.
+Times when the baby is in neutral emotion are not marked.
+Bouts of emotion as scored as events, where the grey spaces between emotion events mean the baby is neutral or emotion is unclear.
+Coders also mark times as “missing” when the baby&rsquo;s face could not possibly be coded for emotion (e.g., face completely turned away from camera, baby&rsquo;s head out of the video).
+When the baby&rsquo;s face is clearly not visible, negative emotion may be coded only if there is absolute clear vocal affect (e.g., baby is screaming and crying).</p>
+
+<p>Coders are watching/tagging the duration of each positive or negative emotion event by marking onset/offset times.
+To determine emotion, coders are watching the baby&rsquo;s face, not vocal affect.
+To determine if emotion is not codeable/missing, coders are watching for when the face fully moves out of the camera view.</p>
+
+<h3 id="value-list">Value List</h3>
+
+<p><code>p</code> = positive emotion</p>
+
+<p><code>n</code> = negative emotion</p>
+
+<p><code>.</code> = baby&rsquo;s face is completely not visible</p>
+
+<h3 id="operational-definitions">Operational Definitions</h3>
+
+<p><code>&lt;p&gt;</code></p>
+
+<p>Code &lsquo;p&rsquo; when the baby is clearly displaying positive emotion (e.g.,
+smiling).
+Code based off of the face and not off of the voice. Look for raising of the corners of the mouth, grinning and showing the teeth, along with closing of the eyes because of the raised cheeks.
+If there is any doubt that the baby is showing positive emotion, then do not begin the code.</p>
+
+<p>Positive emotion cannot be coded based on the voice alone.
+So positive emotion could not be scored when the baby&rsquo;s face is absolutely not visible (i.e. missing).</p>
+
+<p><code>&lt;n&gt;</code></p>
+
+<p>Code &lsquo;n&rsquo; when the baby is clearly displaying negative emotion (e.g., frowning, wincing).
+Code based off of the face and not off of the voice. Look for lowering of the corners of the mouth, stretching and tautness of the lips, along with closing of the eyes because of furrowed brow.
+If there is any doubt that the baby is showing negative emotion, then do not begin the code.</p>
+
+<p>Do not defer to the voice to code negative emotion when the face is visible.
+If the baby&rsquo;s face is clearly not visible (i.e. missing), then &lsquo;n&rsquo; can be coded if the baby is displaying clear negative emotion through their voice.
+The baby could be screaming, crying, or yelling.
+If there is any doubt whether the voice is negative, then do not begin the code.</p>
+
+<h4 id="onset">Onset</h4>
+
+<p>Onset of an emotion event is the first frame the baby is clearly displaying positive/negative emotion through the face.
+The onset does not need to be completely frame accurate, since emotion could begin in any part of the face.
+The coder is looking to identify when any lay person would absolutely agree the baby is showing positive/negative emotion based on the face.</p>
+
+<p>There is no criterion for how long an emotion event should be.
+It is easy for the coder to mark the first frame when they see clear positive/negative emotion, even if it ends a few frames later.
+Events that are later deemed “too brief” could be removed via scripting.</p>
+
+<p>When coding &lsquo;n&rsquo; from voice during missing time, set the onset when the negative voice starts and end the &lsquo;n&rsquo; code when the voice ends.
+The onset/offset do not need to be frame accurate.
+For cases when emotion code begins right out of missing: The face has not been visible and the first frame you can see the face again the infant is clearly displaying positive/negative emotion.
+Code the onset of the emotion code as the first frame when the face reappears. Use the “0” key to set the onset of the emotion event and simultaneously set the offset of &lsquo;missing&rsquo;.
+We want to preserve the 1ms difference between &lsquo;missing&rsquo; and the emotion code so we can know that that &lsquo;missing&rsquo; event was ended because of the onset of an emotion code.</p>
+
+<h4 id="offset">Offset</h4>
+
+<p>Offset of a positive/negative emotion is the first frame the baby is clearly back to a neutral emotion through the face.
+The offset does not need to completely frame accurate, since emotion could end in any part of the face.
+The coder is looking to identify when any lay person would absolutely agree the baby is no longer showing any positive/negative emotion based on the face.</p>
+
+<p>If the baby&rsquo;s face returns to neutral for less than 5 frames during one emotion code (e.g. positive, then neutral for 4 frames, then back to positive), continue the &lsquo;p&rsquo; or &lsquo;n&rsquo; code.
+The coder would have to expend unneeded effort to identify and tag those offsets and onsets time, since reliability does not need to be frame accurate.</p>
+
+<p>For cases when emotion code is ended by missing: The emotion event may or may not have ended but the coder can no longer see the face to code offset.
+Code the offset as the first frame the face completely is not visible (see &lsquo;missing&rsquo; code below).
+Use “0” key to set the offset of emotion and simultaneously code the onset of &lsquo;missing&rsquo;.
+We want to preserve the 1ms difference between the emotion code and &lsquo;missing&rsquo; so we can know that that &lsquo;missing&rsquo; event caused the offset of that emotion event.</p>
+
+<p><code>&lt;.&gt;</code></p>
+
+<p>Code &lsquo;.&rsquo; for missing when the baby&rsquo;s face is completely not visible.
+The baby&rsquo;s full face could turned away from the camera, baby&rsquo;s head is completely off camera, or the baby is out of frame entirely.
+If the coder could see the emotion the baby is expressing in their face from a side or oblique angle, then do not code missing.</p>
+
+<p>If the face is not visible but the baby is displaying clear negative emotion in the voice (e.g., baby crying or screaming) then the missing code is ended and &lsquo;n&rsquo; is coded (see &lsquo;n&rsquo; code). Positive emotion cannot be coded by voice.</p>
+
+<p>Onset is the first frame in which the coder clearly cannot see the face.
+Offset is the first frame in which the coder can clearly see the face again.
+The onset and offset do not need to be completely frame accurate, since reliability does not need to be exact from accurate.</p>
+
+<p>If the baby&rsquo;s face was &lsquo;missing&rsquo; and then reappeared for less than 5 frames, don’t stop the &lsquo;.&rsquo; code to mark those few frames.</p>
+
+<h3 id="how-to-code">How to Code</h3>
+
+<p>Set “JUMP-BACK-BY” key to 1 s.</p>
+
+<p>Play with #8-PLAY in real time (1x speed) until the baby changes to clear positive or clear negative emotion or the face is clearly not visible.
+Focus on the baby&rsquo;s face and do not be distracted by what the baby is saying or doing.</p>
+
+<p>Pause with #5-STOP once you have identified a clear change in emotion or that the baby&rsquo;s face is no longer visible at all.
+Shuttle back with #4-SHUTTLEBACK at <sup>1</sup>&frasl;<sub>8</sub>-1/4x speed to identify the onset. Use the mouth and eyes as the guide to onset.
+Press ENTER to set the onset as the frame where any lay person would say that baby is happy or sad.
+The coder may even feel happy or sad watching the baby&rsquo;s face; use this as a guide for onset.</p>
+
+<p>Then hit #8-PLAY then #4-SHUTTLEBACK once to watch at 1/2x and look for the offset of that emotion or when the face comes completely back into view.
+For missing, if it seems like there may be a long stretch of missing (e.g. baby has completely wandered out of the room) then watch at 1x or 2x speed—but be listening in case there is negative emotion in the voice.
+Pause when you identify the offset.</p>
+
+<p>Hit #1-JOGBACK and #3-JOGFORWARD to tag the frame the baby&rsquo;s face is clearly not positive or not negative (returned to neutral) or the face is visible again to code emotion from.</p>
+
+<p>Then return to real time (1x speed) with #8-PLAY to watch for the next event.</p>
+
+<h2 id="momemotion"><code>momemotion</code></h2>
+
+<p><code>&lt;emotion_p-n&gt;</code></p>
+
+<h3 id="general-orientation-1">General Orientation</h3>
+
+<p>This code captures the times that the mom is clearly displaying positive or negative emotion through facial expressions.
+Times when the mom is in neutral emotion are not marked. Bouts of emotion as scored as events, where the grey spaces between emotion events mean the mom is neutral or emotion is unclear.
+Coders also mark times as “missing” when the mom&rsquo;s face could not possibly be coded for emotion (e.g., face completely turned away from camera, mom&rsquo;s head out of the video).
+When the mom&rsquo;s face is clearly not visible, negative emotion may be coded only if there is absolute clear vocal affect (e.g., mom is yelling).</p>
+
+<p>Coders are watching/tagging the duration of each positive or negative emotion event by marking onset/offset times.
+To determine emotion, coders are watching the mom&rsquo;s face, not vocal affect.
+To determine if emotion is not codeable/missing, coders are watching for when the face fully moves out of the camera view.</p>
+
+<h3 id="value-list-1">Value List</h3>
+
+<p><code>p</code> = positive emotion</p>
+
+<p><code>n</code> = negative emotion</p>
+
+<p><code>.</code> = mom&rsquo;s face is completely not visible</p>
+
+<h3 id="operational-definitions-1">Operational Definitions</h3>
+
+<p><code>&lt;p&gt;</code></p>
+
+<p>Code &lsquo;p&rsquo; when the mom is clearly displaying positive emotion (e.g., smiling).
+Code based off of the face and not off of the voice.
+Look for raising of the corners of the mouth, grinning and showing the teeth, along with closing of the eyes because of the raised cheeks.
+If there is any doubt that the mom is showing positive emotion, then do not begin the code.</p>
+
+<p>Positive emotion cannot be coded based on the voice alone.
+So positive emotion could not be scored when the mom&rsquo;s face is absolutely not visible (i.e. missing).</p>
+
+<p><code>&lt;n&gt;</code></p>
+
+<p>Code &lsquo;n&rsquo; when the mom is clearly displaying negative emotion (e.g., frowning, wincing).
+Code based off of the face and not off of the voice.
+Look for lowering of the corners of the mouth, stretching and tautness of the lips, along with closing of the eyes because of furrowed brow.
+If there is any doubt that the mom is showing negative emotion, then do not begin the code.</p>
+
+<p>Do not defer to the voice to code negative emotion when the face is visible.
+If the mom&rsquo;s face is clearly not visible (i.e. missing), then &lsquo;n&rsquo; can be coded if the mom is displaying clear negative emotion through their voice.
+The mom could be screaming or upset.
+If there is any doubt whether the voice is negative, then do not begin the code.</p>
+
+<h4 id="onset-1">Onset</h4>
+
+<p>Onset of an emotion event is the first frame the mom is clearly displaying positive/negative emotion through the face.
+The onset does not need to be completely frame accurate, since emotion could begin in any part of the face.
+The coder is looking to identify when any lay person would absolutely agree the mom is showing positive/negative emotion based on the face.</p>
+
+<p>There is no criterion for how long an emotion event should be.
+It is easy for the coder to mark the first frame when they see clear positive/negative emotion, even if it ends a few frames later.
+Events that are later deemed “too brief” could be removed via scripting.</p>
+
+<p>When coding &lsquo;n&rsquo; from voice during missing time, set the onset when the negative voice starts and end the &lsquo;n&rsquo; code when the voice ends.
+The onset/offset do not need to be frame accurate.
+For cases when emotion code begins right out of missing: The face has not been visible and the first frame you can see the face again the infant is clearly displaying positive/negative emotion.
+Code the onset of the emotion code as the first frame when the face reappears. Use the “0” key to set the onset of the emotion event and simultaneously set the offset of &lsquo;missing&rsquo;.
+We want to preserve the 1ms difference between &lsquo;missing&rsquo; and the emotion code so we can know that that &lsquo;missing&rsquo; event was ended because of the onset of an emotion code.</p>
+
+<h4 id="offset-1">Offset</h4>
+
+<p>Offset of a positive/negative emotion is the first frame the mom is clearly back to a neutral emotion through the face.
+The offset does not need to completely frame accurate, since emotion could end in any part of the face.
+The coder is looking to identify when any lay person would absolutely agree the mom is no longer showing any positive/negative emotion based on the face.</p>
+
+<p>If the mom&rsquo;s face returns to neutral for less than 5 frames during one emotion code (e.g. positive, then neutral for 4 frames, then back to positive), continue the &lsquo;p&rsquo; or &lsquo;n&rsquo; code.
+The coder would have to expend unneeded effort to identify and tag those offsets and onsets time, since reliability does not need to be frame accurate.</p>
+
+<p>For cases when emotion code is ended by missing: The emotion event may or may not have ended but the coder can no longer see the face to code offset.
+Code the offset as the first frame the face completely is not visible (see &lsquo;missing&rsquo; code below).
+Use “0” key to set the offset of emotion and simultaneously code the onset of &lsquo;missing&rsquo;.
+We want to preserve the 1ms difference between the emotion code and &lsquo;missing&rsquo; so we can know that that &lsquo;missing&rsquo; event caused the offset of that emotion event.</p>
+
+<p><code>&lt;.&gt;</code></p>
+
+<p>Code &lsquo;.&rsquo; for missing when the mom&rsquo;s face is completely not visible.
+The mom&rsquo;s full face could turned away from the camera, mom&rsquo;s head is completely off camera, or the mom is out of frame entirely.
+If the coder could see the emotion the mom is expressing in their face from a side or oblique angle, then do not code missing.</p>
+
+<p>If the face is not visible but the mom is displaying clear negative emotion in the voice (e.g., mom yelling) then the missing code is ended and &lsquo;n&rsquo; is coded (see &lsquo;n&rsquo; code). Positive emotion cannot be coded by voice.</p>
+
+<p>Onset is the first frame in which the coder clearly cannot see the face. Offset is the first frame in which the coder can clearly see the face again.
+The onset and offset do not need to be completely frame accurate, since reliability does not need to be exact from accurate.</p>
+
+<p>If the mom&rsquo;s face was &lsquo;missing&rsquo; and then reappeared for less than 5 frames, don’t stop the &lsquo;.&rsquo; code to mark those few frames.</p>
+
+<h3 id="how-to-code-1">How to Code</h3>
+
+<p>Set “JUMP-BACK-BY” key to 1 s.</p>
+
+<p>Play with #8-PLAY in real time (1x speed) until the mom changes to clear positive or clear negative emotion or the face is clearly not visible.
+Focus on the mom&rsquo;s face and do not be distracted by what the mom is saying or doing.</p>
+
+<p>Pause with #5-STOP once you have identified a clear change in emotion or that the mom&rsquo;s face is no longer visible at all.
+Shuttle back with #4-SHUTTLEBACK at <sup>1</sup>&frasl;<sub>8</sub>-1/4x speed to identify the onset.
+Use the mouth and eyes as the guide to onset.
+Press ENTER to set the onset as the frame where any lay person would say that mom is happy or sad.
+The coder may even feel happy or sad watching the mom&rsquo;s face; use this as a guide for onset.</p>
+
+<p>Then hit #8-PLAY then #4-SHUTTLEBACK once to watch at 1/2x and look for the offset of that emotion or when the face comes completely back into view.
+For missing, if it seems like there may be a long stretch of missing (e.g. mom is on a different side of the room from the baby) then watch at 1x or 2x speed—but be listening in case there is negative emotion in the voice.
+Pause when you identify the offset.</p>
+
+<p>Hit #1-JOGBACK and #3-JOGFORWARD to tag the frame the mom&rsquo;s face is clearly not positive or not negative (returned to neutral) or the face is visible again to code emotion from.</p>
+
+<p>Then return to real time (1x speed) with #8-PLAY to watch for the next event.</p>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Dec 30, 2018
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+
+  </body>
+</html>
+
+

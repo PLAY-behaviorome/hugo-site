@@ -1,0 +1,25 @@
++++
+title = ""
+date = 2018-09-09T00:00:00
+lastmod = 2018-12-30T00:00:00
+
+draft = false  # Is this a draft? true/false
+toc = true  # Show table of contents? true/false
+type = "docs"  # Do not modify.
+[menu.people]
+  name = "Collaborators"
+  weight = 3
++++
+
+## Collaborating Investigators
+
+The following provides information about which researchers are collecting data and which labs are coding and providing overall guidance on the project.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+roster_df <- readr::read_csv("csv/roster.csv")
+roster <- roster_df %>%
+  dplyr::select(., Last, First, Institution, Collection_role) %>%
+  dplyr::arrange(., Last)
+knitr::kable(roster)
+```
